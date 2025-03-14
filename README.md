@@ -16,20 +16,11 @@ cd random-walks
 
 ## Usage
 
-Install the virtual environment as a kernel in the Jupyter Lab server.
-You can later select the kernel from the Jupyter Lab server.
+To display the dashboard, run the following command:
 
 ```bash
-uv run ipython kernel install --user --env VIRTUAL_ENV .venv --name=project
+uv run panel serve main.ipynb --dev
 ```
-
-To start the Jupyter Lab server, run the following command:
-
-```bash
-uv run --with jupyter jupyter lab
-```
-
-The Jupyter Lab server will start on [http://localhost:8888](http://localhost:8888).
 
 ## Development
 
